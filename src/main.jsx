@@ -6,10 +6,12 @@ import Footer from "./components/Footer.jsx";
 import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 import ContactForm from "./components/ContactForm.jsx";
 import Home from "./components/Home.jsx";
+import FloatingButton from "./components/FloatingButton.jsx";
 
 createRoot(document.getElementById('root')).render(
   <Router>
   <Header />
+  <FloatingButton/>
   <main>
     <Routes>
       <Route path="/" element={<Home/>} />

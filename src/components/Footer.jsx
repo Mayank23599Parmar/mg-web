@@ -1,5 +1,5 @@
 
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -7,18 +7,12 @@ const Footer = () => {
     <footer className="bg-main text-white py-8">
       <div className="container mx-auto px-4 text-center space-y-6">
         {/* Social Icons */}
-        <div className="flex justify-center space-x-4">
-          <a href="https://facebook.com" className="text-blue-200 hover:text-white">
-            <FaFacebook size={24} />
-          </a>
-          <a href="https://twitter.com" className="text-blue-200 hover:text-white">
-            <FaTwitter size={24} />
-          </a>
-          <a href="https://linkedin.com" className="text-blue-200 hover:text-white">
+        <div className="flex justify-center space-x-4"> 
+          <a href="https://www.linkedin.com/in/mayankparmar23599/" className="text-blue-200 hover:text-white">
             <FaLinkedin size={24} />
           </a>
-          <a href="https://instagram.com" className="text-blue-200 hover:text-white">
-            <FaInstagram size={24} />
+          <a href="https://www.linkedin.com/in/gaurang-dholariya-a119b7203/" className="text-blue-200 hover:text-white">
+            <FaLinkedin size={24} />
           </a>
         </div>
         {/* Links */}

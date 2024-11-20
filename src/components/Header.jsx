@@ -1,10 +1,20 @@
 
-import { useState } from "react";
-import { FaHome, FaInfoCircle, FaEnvelope, FaShieldAlt ,FaBars, FaTimes} from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { FaHome, FaEnvelope, FaShieldAlt ,FaBars, FaTimes} from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
+
+  // Close the menu when the location changes
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    setIsMenuOpen(false);
+  }, [location]);
   return (
     <header className="bg-main text-white fixed top-0 w-full z-50 shadow-md">
     <div className="container mx-auto flex items-center justify-between px-4 py-3">

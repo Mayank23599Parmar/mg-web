@@ -7,16 +7,19 @@ import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 import ContactForm from "./components/ContactForm.jsx";
 import Home from "./components/Home.jsx";
 import FloatingButton from "./components/FloatingButton.jsx";
+import CurrencyPrivacyPolicy from "./components/CurrencyPolicy.jsx";
 
 createRoot(document.getElementById('root')).render(
   <Router>
   <Header />
-  <FloatingButton/>
+  <FloatingButton position="left-bottom" label={"Install PWA APP"} url="https://apps.shopify.com/mg-pwa-mobile-pro"/>
+  <FloatingButton position="right-bottom" label={"Install Currency conveter App"} url="https://apps.shopify.com/mg-currency-converter-pro"/>
   <main>
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/contact" element={<ContactForm />} />
+      <Route path="/mg-currency-conveter-privacy-policy" element={<CurrencyPrivacyPolicy />} />
       {/* Add other routes here */}
     </Routes>
   </main>

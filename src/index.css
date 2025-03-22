@@ -70,3 +70,30 @@
 .bg-second{
   background-color: hsl(214.43deg 46.18% 51.18%);
 }
+.left-top {
+  top: calc(var(--mg-header-height) +  5px) !important;
+  right: unset !important;
+  bottom: unset !important;
+  left: 10px !important;
+}
+
+.left-bottom {
+  top: unset !important;
+  right: unset !important;
+  bottom: 20px !important;
+  left: 10px !important;
+}
+
+.right-top {
+  top: calc(var(--mg-header-height) +  5px) !important;
+  right: 10px !important;
+  bottom: unset !important;
+  left: unset !important;
+}
+
+.right-bottom {
+  top: unset !important;
+  right: 10px !important;
+  bottom: 20px !important;
+  left: unset !important;
+}

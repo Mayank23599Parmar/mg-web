@@ -30,6 +30,9 @@ const Header = () => {
         <Link to="/" className="flex items-center gap-2 hover:text-blue-200">
         <FaHome /> Home
         </Link>
+        <Link to="/lm-dynamic-prices-privacy-policy" className=" text-white flex items-center gap-2 hover:text-blue-200">
+          <FaShieldAlt /> Privacy Policy- LM Dynamic Prices
+        </Link>
         <Link to="/privacy-policy" className=" text-white flex items-center gap-2 hover:text-blue-200">
           <FaShieldAlt /> Privacy Policy- PWA APP
         </Link>

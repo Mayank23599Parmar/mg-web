@@ -8,6 +8,7 @@ import ContactForm from "./components/ContactForm.jsx";
 import Home from "./components/Home.jsx";
 import FloatingButton from "./components/FloatingButton.jsx";
 import CurrencyPrivacyPolicy from "./components/CurrencyPolicy.jsx";
+import DynamicPolicy from "./components/DynamicPolicy.jsx";
 
 createRoot(document.getElementById('root')).render(
   <Router>
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/contact" element={<ContactForm />} />
       <Route path="/mg-currency-conveter-privacy-policy" element={<CurrencyPrivacyPolicy />} />
+      <Route path="/lm-dynamic-prices-privacy-policy" element={<DynamicPolicy />} />
       {/* Add other routes here */}
     </Routes>
   </main>

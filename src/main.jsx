@@ -9,12 +9,29 @@ import Home from "./components/Home.jsx";
 import FloatingButton from "./components/FloatingButton.jsx";
 import CurrencyPrivacyPolicy from "./components/CurrencyPolicy.jsx";
 import DynamicPolicy from "./components/DynamicPolicy.jsx";
+import BlogifyPrivacyPolicy from "./components/Blogify.jsx";
 
 createRoot(document.getElementById('root')).render(
   <Router>
   <Header />
-  <FloatingButton position="left-bottom" label={"Install PWA APP"} url="https://apps.shopify.com/mg-pwa-mobile-pro"/>
-  <FloatingButton position="right-bottom" label={"Install Currency conveter App"} url="https://apps.shopify.com/mg-currency-converter-pro"/>
+  <FloatingButton
+    position="right-bottom"
+    label={"Install PWA APP"}
+    url="https://apps.shopify.com/mg-pwa-mobile-pro"
+    offset={0}
+  />
+  <FloatingButton
+    position="right-bottom"
+    label={"Install Currency conveter App"}
+    url="https://apps.shopify.com/mg-currency-converter-pro"
+    offset={56}
+  />
+  <FloatingButton
+    position="right-bottom"
+    label={"Install LM ‑ Store Protector"}
+    url="https://apps.shopify.com/lm-store-protector"
+    offset={112}
+  />
   <main>
     <Routes>
       <Route path="/" element={<Home/>} />
@@ -22,6 +39,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/contact" element={<ContactForm />} />
       <Route path="/mg-currency-conveter-privacy-policy" element={<CurrencyPrivacyPolicy />} />
       <Route path="/lm-dynamic-prices-privacy-policy" element={<DynamicPolicy />} />
+      <Route path="/lm-blogify-privacy-policy" element={<BlogifyPrivacyPolicy />} />
       {/* Add other routes here */}
     </Routes>
   </main>

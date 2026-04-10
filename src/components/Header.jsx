@@ -39,6 +39,9 @@ const Header = () => {
         <Link to="/mg-currency-conveter-privacy-policy" className=" text-white flex items-center gap-2 hover:text-blue-200">
           <FaShieldAlt /> Privacy Policy- Currency Conveter App
         </Link>
+        <Link to="/lm-cart-live-privacy-policy" className=" text-white flex items-center gap-2 hover:text-blue-200">
+          <FaShieldAlt /> Privacy Policy- LM Cart Live
+        </Link>
         <Link to="/contact" className="text-white flex items-center gap-2 hover:text-blue-200">
           <FaEnvelope /> Contact
         </Link>

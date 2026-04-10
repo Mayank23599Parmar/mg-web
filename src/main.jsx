@@ -10,6 +10,7 @@ import FloatingButton from "./components/FloatingButton.jsx";
 import CurrencyPrivacyPolicy from "./components/CurrencyPolicy.jsx";
 import DynamicPolicy from "./components/DynamicPolicy.jsx";
 import BlogifyPrivacyPolicy from "./components/Blogify.jsx";
+import LmCartLivePolicy from "./components/LmCartLivePolicy.jsx";
 
 createRoot(document.getElementById('root')).render(
   <Router>
@@ -40,6 +41,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/mg-currency-conveter-privacy-policy" element={<CurrencyPrivacyPolicy />} />
       <Route path="/lm-dynamic-prices-privacy-policy" element={<DynamicPolicy />} />
       <Route path="/lm-blogify-privacy-policy" element={<BlogifyPrivacyPolicy />} />
+      <Route path="/lm-cart-live-privacy-policy" element={<LmCartLivePolicy />} />
       {/* Add other routes here */}
     </Routes>
   </main>
